@@ -1,8 +1,7 @@
 provider "aws" {
  #profile = "default"
   region  = "us-east-1"
-  # Access_Key_id="AKIA3K3KIXVGMF6RZC7"
-   #Secret_Access_Key="ouVWbehp1kvw5UdSLZT0PkSCtTUdeNMDYdiG6CNB"
+  
 }
 terraform {
   backend "s3" {
@@ -16,8 +15,7 @@ terraform {
 /*terraform {
   backend "remote"{
      organization="prem-Terraform-Labs"
-     Access_Key_id="AKIA3K3KIXVGMF6RZC7U"        
-    Secret_Access_Key="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" 
+    
 workspaces{
          name= "premexample"
 }
@@ -27,8 +25,7 @@ workspaces{
 /* provider "aws" {
  #profile = "default"
   region  = "us-east-1"
-    #Access_Key_id="AKIA3K3KIXVGMF6RZC7"
-    #Secret_Access_Key="ouVWbehp1kvw5UdSLZT0PkSCtTUdeNMDYdiG6CNB"
+    
 }*/
 
 resource "aws_instance" "app_server" {
